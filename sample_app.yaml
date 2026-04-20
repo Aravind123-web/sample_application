@@ -1,11 +1,11 @@
 
 apiVersion: apps/v1
-kind: Deployment
+kind: Deployment 
 metadata:
   name: myapp
 spec:
-  replicas: 10
-  selector:
+  replicas: 10 # number of pods to be created
+  selector: # to select the pods created by this deployment
     matchLabels:
       app: myapp
   template:
